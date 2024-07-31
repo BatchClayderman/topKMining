@@ -12,13 +12,25 @@ A set of algorithms forked from the SPMF platform.
 
 ## THUI
 
-The implementation of the original THUI algorithm, abstracted from the SPMF. 
+This is an extensive implementation of the original THUI algorithm, abstracted from the SPMF. 
+
+This implementation can output accurate results without an additional pruning strategy or fuzzy results with the additional pruning strategy. 
+
+Multiple layers of loops are set up for better experiment implementation. 
+
+THUI can only focus on the threat values. 
 
 ## THUFI
 
 The implementation of mining top-$k$ high threat and frequency itemsets based on the original THUI. 
 
+THUFI will first compute the top-$k$ high threat itemsets and top-$k$ high frequency itemsets respectively. 
+
+Subsequently, the two results will be merged to form the final results. 
+
 This is not an accurate algorithm since it is implemented by directly replacing the utility values with the FU values. 
+
+When comparing the baseline model THUI and TTFE, THUFI should be used since it has two kinds of values. 
 
 ## TFUI
 
@@ -38,12 +50,24 @@ It has more friendly debugging procedures.
 
 ### TTFE_v1
 
-This is an accurate algorithm. 
+This is an accurate algorithm without tree construction procedures. 
 
 It will also compute the top-$k$ event sets in each transaction. 
 
 ### TTFE_v2
 
-This is a fuzzy algorithm using the tree data structure. 
+This is an accurate algorithm with tree construction procedures. 
 
 It has better performance due to the node pruning. 
+
+### TTFE_v3
+
+More switches are set. Users can try to run TTFE with different combinations of switches. 
+
+More experimental options and file operations are provided. 
+
+### TTFE_v4
+
+Extended experiments are merged. 
+
+** Data should be cut according to a fixed ratio if it is hard to test GUMM due to the limitation of computing memory. **
