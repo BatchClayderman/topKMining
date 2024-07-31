@@ -6,6 +6,14 @@ This is the implementation of the TTFE algorithm. Some related literature articl
 
 The development of top-$k$ mining algorithms of the branch of the TTFE. 
 
+## Datasets
+
+Six famous datasets are included. 
+
+Example datasets used for algorithm debugging, testing, and tracking are proposed. 
+
+A Python script is written for 2D dataset generation. 
+
 ## Codes
 
 The following are the codes of the top $k$ mining algorithms. 
@@ -74,4 +82,4 @@ More experimental options and file operations are provided.
 
 Extended experiments are merged. 
 
-** Data should be cut according to a fixed ratio if it is hard to test GUMM due to the limitation of computing memory. **
+**Data should be cut according to a fixed ratio if it is hard to test GUMM due to the limitation of computing memory.**
