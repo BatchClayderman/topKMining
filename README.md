@@ -6,11 +6,15 @@ This is the implementation of the TTFE algorithm. Some related literature articl
 
 The development of top-$k$ mining algorithms of the branch of the TTFE. 
 
+## Codes
+
+The following are the codes of the top $k$ mining algorithms. 
+
 ## SPMF
 
 A set of algorithms forked from the SPMF platform. 
 
-## THUI
+### THUI
 
 This is an extensive implementation of the original THUI algorithm, abstracted from the SPMF. 
 
@@ -20,7 +24,7 @@ Multiple layers of loops are set up for better experiment implementation.
 
 THUI can only focus on the threat values. 
 
-## THUFI
+### THUFI
 
 The implementation of mining top-$k$ high threat and frequency itemsets based on the original THUI. 
 
@@ -32,13 +36,13 @@ This is not an accurate algorithm since it is implemented by directly replacing 
 
 When comparing the baseline model THUI and TTFE, THUFI should be used since it has two kinds of values. 
 
-## TFUI
+### TFUI
 
 The improved implementation of the THUFI algorithm with file configures. 
 
 It supports the alpha and the beta values directly set in the database file. 
 
-## TTFE
+### TTFE
 
 The implementation of mining top-$k$ high threat and frequency event sets. 
 
@@ -48,25 +52,25 @@ It uses better data structure and sorting algorithms.
 
 It has more friendly debugging procedures. 
 
-### TTFE_v1
+#### TTFE_v1
 
 This is an accurate algorithm without tree construction procedures. 
 
 It will also compute the top-$k$ event sets in each transaction. 
 
-### TTFE_v2
+#### TTFE_v2
 
 This is an accurate algorithm with tree construction procedures. 
 
 It has better performance due to the node pruning. 
 
-### TTFE_v3
+#### TTFE_v3
 
 More switches are set. Users can try to run TTFE with different combinations of switches. 
 
 More experimental options and file operations are provided. 
 
-### TTFE_v4
+#### TTFE_v4
 
 Extended experiments are merged. 
 
